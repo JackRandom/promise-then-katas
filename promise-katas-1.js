@@ -68,13 +68,9 @@ const happySad = (number) => {
 // myNameIs() resolves to a function that takes one argument, name, and returns "My name is name" Eg name => `Me name is ${name}`
 
 const myNameIs = (name) => { 
-
-    const promise = new Promise((resolve, reject) => {
-       
-        const myName = (name) => `My name is ${name}`;
-
+    const promise = new Promise((resolve, reject) => {  
+    const myName = (name) => `My name is ${name}`;
         resolve(myName);
-    
      })
      return promise;
 };
